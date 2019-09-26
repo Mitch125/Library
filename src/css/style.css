@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-color: #5cdb95;
+}
+
+.table {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    background-color: orange;
+    width: 100%;
+    padding-left: 0;
+}
+
+li {
+    float: left;
+    /*margin: 20px;*/
+    width: 15%;
+    height: 40px;
+    padding: 1%;
+    background-color: inherit;
+    padding-top: 20px;
+}
+
+.header {
+    width: 100%;
+}
+
+ul:nth-child(odd) {
+    color: white;
+    background-color: purple;
+}
+
+.header li {
+    color: blue;
+    background-color: red;
+    height: 120%;
+}
+
+input {
+    width: 80%;
+    padding: 0 5%;
+    border-radius: 10px;
+    box-shadow: none;
+    display: inline;
+    border: none;
+
+    outline: none;
+}
+
+.deleteButton,
+#submitBook {
+    width: 50%;
+    padding: 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.warning {
+    color: red;
+}
+.hidden {
+    display: none;
+}
+
+.bookProp1,
+.bookProp2 {
+    width: 22%;
+}

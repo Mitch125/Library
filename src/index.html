@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <title>Library</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="title">MyLibrary</div>
+    <button id="newBook">New Book</button>
+
+    <div class="table">
+      <div class="header">
+        <ul>
+          <li class="bookProp1">Title</li>
+          <li class="bookProp2">Author</li>
+          <li class="bookProp3">Year</li>
+          <li class="bookProp4">Status</li>
+          <li class="bookProp5">&nbsp;</li>
+        </ul>
+      </div>
+      <!-- /.header -->
+      <!--             <div class="books">
+    /.row
+    <ul>
+        <li class="bookProp1">bookProp1</li>
+        <li class="bookProp2">bookProp2</li>
+        <li class="bookProp3">bookProp3</li>
+        <li class="bookProp4">bookProp4</li>
+        <li class="bookProp5">bookProp5</li>
+    </ul>
+     -->
+
+      <ul class="noobie hidden">
+        <li class="bookProp1">
+          <input
+            type="text"
+            placeholder="Title"
+            id="inputTitle"
+          />
+        </li>
+        <li class="bookProp2">
+          <input
+            type="text"
+            placeholder="Author"
+            id="inputAuthor"
+          />
+        </li>
+
+        <li class="bookProp3">
+          <input
+            type="number"
+            placeholder="Year"
+            id="inputYear"
+          />
+        </li>
+        <li class="bookProp4">
+          <select name="status" id="inputStatusU"
+            ><option value="Unread">Unread</option
+            ><option value="In Progress"
+              >In Progress</option
+            ><option value="Completed"
+              >Completed</option
+            ><option value="Completed"
+              >Completed</option
+            ></select
+          >
+        </li>
+        <li class="bookProp5">
+          <button id="submitBook">Submit</button>
+        </li>
+      </ul>
+      <!-- </div> -->
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
