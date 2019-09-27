@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="title">MyLibrary</div>
-    <button id="newBook">New Book</button>
+    <div class="title">My Library</div>
 
     <div class="table">
+      <button id="newBook">New Book</button>
       <div class="header">
         <ul>
           <li class="bookProp1">Title</li>
@@ -35,45 +35,50 @@
     </ul>
      -->
 
-      <ul class="noobie hidden">
-        <li class="bookProp1">
-          <input
-            type="text"
-            placeholder="Title"
-            id="inputTitle"
-          />
-        </li>
-        <li class="bookProp2">
-          <input
-            type="text"
-            placeholder="Author"
-            id="inputAuthor"
-          />
-        </li>
+      <div>
+        <ul class="noobie hidden">
+          <li class="bookProp1 userDef">
+            <input
+              type="text"
+              placeholder="Title"
+              id="inputTitle"
+            />
+          </li>
+          <li class="bookProp2 userDef">
+            <input
+              type="text"
+              placeholder="Author"
+              id="inputAuthor"
+            />
+          </li>
 
-        <li class="bookProp3">
-          <input
-            type="number"
-            placeholder="Year"
-            id="inputYear"
-          />
-        </li>
-        <li class="bookProp4">
-          <select name="status" id="inputStatusU"
-            ><option value="Unread">Unread</option
-            ><option value="In Progress"
-              >In Progress</option
-            ><option value="Completed"
-              >Completed</option
-            ><option value="Completed"
-              >Completed</option
-            ></select
-          >
-        </li>
-        <li class="bookProp5">
-          <button id="submitBook">Submit</button>
-        </li>
-      </ul>
+          <li class="bookProp3 userDef">
+            <input
+              type="number"
+              placeholder="Year"
+              id="inputYear"
+            />
+          </li>
+          <li class="bookProp4 userDef">
+            <select
+              name="status"
+              id="inputStatusU"
+              ><option value="Unread"
+                >Unread</option
+              ><option value="In Progress"
+                >In Progress</option
+              ><option value="Completed"
+                >Completed</option
+              ></select
+            >
+          </li>
+          <li class="bookProp5  userDef">
+            <button id="submitBook">
+              Submit
+            </button>
+          </li>
+        </ul>
+      </div>
       <!-- </div> -->
     </div>
     <script src="js/script.js"></script>

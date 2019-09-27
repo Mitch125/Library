@@ -1,66 +1,82 @@
 body {
-    margin: 0;
     background-color: #5cdb95;
+    margin: 0;
+}
+
+.title {
+    padding: 20px;
+    font-size: 3em;
+    text-align: center;
+}
+
+#newBook {
+    /*margin-bottom: px;*/
+    width: 100px;
 }
 
 .table {
-    width: 80%;
-    max-width: 1000px;
     margin: 0 auto;
+    max-width: 1000px;
+    width: 80%;
 }
 
 ul {
+    background-color: CadetBlue;
     list-style-type: none;
-    background-color: orange;
-    width: 100%;
     padding-left: 0;
-}
-
-li {
-    float: left;
-    /*margin: 20px;*/
-    width: 15%;
-    height: 40px;
-    padding: 1%;
-    background-color: inherit;
-    padding-top: 20px;
-}
-
-.header {
     width: 100%;
 }
-
 ul:nth-child(odd) {
+    background-color: DarkSlateBlue;
     color: white;
-    background-color: purple;
 }
 
 .header li {
-    color: blue;
-    background-color: red;
+    background-color: LightCoral;
+    color: black;
     height: 120%;
 }
 
+li {
+    background-color: inherit;
+    border-top: inherit;
+    float: left;
+    /*margin: 20px;*/
+    height: 40px;
+    padding: 1%;
+    padding-top: 5px;
+    width: 15%;
+}
+
 input {
-    width: 80%;
-    padding: 0 5%;
+    border: none;
     border-radius: 10px;
     box-shadow: none;
     display: inline;
-    border: none;
 
+    padding: 0 5%;
+    width: 80%;
+}
+
+input:focus,
+.deleteButton:focus,
+#submitBook:focus {
     outline: none;
 }
 
 .deleteButton,
 #submitBook {
-    width: 50%;
-    padding: 0;
-    border-radius: 10px;
-    outline: none;
     border: none;
+    border-radius: 10px;
+    padding: 0;
+    width: 50%;
 }
 
+.deleteButton {
+    width: 60px;
+    float: right;
+    margin-right: 10%;
+}
 .warning {
     color: red;
 }
@@ -71,4 +87,9 @@ input {
 .bookProp1,
 .bookProp2 {
     width: 22%;
+}
+
+.userDef {
+    background-color: LightCoral;
+    border-top: red 3px solid;
 }
